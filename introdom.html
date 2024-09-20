@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction au DOM</title>
+</head>
+<body>
+   <h1><strong>Qu'est-ce que le DOM?</strong></h1> 
+   <p>
+    <blockquote>
+        Le Document Object Model (DOM) est une interface de programmation pour les documents HTML et XML. <br>
+         Il fournit une page dont des programmes peuvent modifier la structure, son style et son contenu. <br>
+        Cette représentation du document permet de le voir comme un groupe structuré de nœuds et d'objets <br>
+        possédant différentes propriétés et méthodes. Fondamentalement, il relie les pages Web aux scripts <br>
+        ou langages de programmation.
+    </blockquote>
+   </p>
+   <p>
+    <blockquote>Une page Web est un document. Celui-ci peut être affiché soit dans la fenêtre du navigateur,<br>
+     soit sous la forme de son code source HTML. Mais il s'agit du même document dans les deux cas. <br>
+     Le modèle objet de document proposé par le DOM fournit une autre manière de représenter, stocker et <br>
+      manipuler ce même document. Le DOM est une représentation entièrement orientée objet de la page Web, <br>
+       et peut être manipulé à l'aide d'un langage de script comme JavaScript</p>
+    </blockquote>
+<p>
+    <blockquote>Les normes DOM du W3C et WHATWG DOM forment la base du DOM implémenté dans la plupart <br>
+     des navigateurs modernes. Beaucoup d'entre-eux fournissent des extensions allant plus loin <br>
+     que le standard, faites donc attention lorsque vous les utilisez sur le Web, où les documents <br>
+     peuvent être consultés par de nombreux navigateurs avec chacun un DOM différent.</p>
+    </blockquote>
+    <p>const paragraphs = document.querySelectorAll("p");
+        // paragraphes[0] est le premier élément <p>
+        // paragraphes[1] est le second élément <p>, etc.
+        alert(paragraphes[0].nodeName);
+        </p>
+</body>
+</html>
